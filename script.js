@@ -43,7 +43,7 @@ let incr = 10,
     // }
 
     // (num == 50) ? console.log('Ok!') : console.log('Error');
-
+/*
     const num = 50;
 
     switch(num){
@@ -60,3 +60,37 @@ let incr = 10,
         console.log('Не в этот раз');
         break;
     }
+*/
+// let num = 50;
+
+// while (num<=55){
+//     console.log(num);
+//     num++;
+// }
+
+/*
+do{
+    console.log(num);
+    num++;
+}
+
+while(num<=55)
+*/
+/*
+let num=50;
+for(let i = 1;i<=8;i++){
+    console.log(num);
+    num++;
+}
+*/
+let num=50;
+
+for(let i = 1;i<=10;i++){
+    if(i===6){
+        // break;
+        continue;
+    }
+
+    console.log(i);
+
+}

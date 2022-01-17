@@ -61,7 +61,7 @@ let incr = 10,
         break;
     }
 */
-<<<<<<< HEAD
+
 // let num = 50;
 
 // while (num<=55){
@@ -70,12 +70,13 @@ let incr = 10,
 // }
 
 /*
+let num = 50;
 do{
     console.log(num);
     num++;
 }
 
-while(num<=55)
+while(num<=55);
 */
 /*
 let num=50;
@@ -84,6 +85,8 @@ for(let i = 1;i<=8;i++){
     num++;
 }
 */
+
+/*
 let num=50;
 
 for(let i = 1;i<=10;i++){
@@ -93,11 +96,67 @@ for(let i = 1;i<=10;i++){
     }
 
     console.log(i);
-
-=======
+}
+*/
+/*
 let num = 50;
 while (num<=55){
     console.log(num);
     num++;
->>>>>>> master
+
 }
+*/
+
+/*
+let num=20;
+function ShowFirstMessage (text){
+    console.log(text);
+    let num=10;
+}
+
+ShowFirstMessage('Hellow world!');
+console.log(num);
+*/
+
+
+/*
+console.log(calc(4,3));
+console.log(calc(5,6));
+console.log(calc(10,6));
+
+function calc(a,b){
+    return(a+b);
+    console.log('dsdfas');
+}
+console.log(calc(4,3));
+console.log(calc(5,6));
+console.log(calc(10,6));
+*/
+
+/*
+let num = 50;
+
+function ret (){
+    let num = 20;
+    return num;
+}
+num = ret();
+console.log(num);
+*/
+
+/*
+const logger= function(){
+    console.log('Hello');
+};
+logger();
+
+*/
+
+const calc = (a,b) => {return (a+b);};
+console.log(calc(3,4));
+
+const calc1= function(a,b) {
+    return (a+b);
+};
+console.log(calc(3,4));
+

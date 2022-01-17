@@ -61,6 +61,7 @@ let incr = 10,
         break;
     }
 */
+<<<<<<< HEAD
 // let num = 50;
 
 // while (num<=55){
@@ -93,4 +94,10 @@ for(let i = 1;i<=10;i++){
 
     console.log(i);
 
+=======
+let num = 50;
+while (num<=55){
+    console.log(num);
+    num++;
+>>>>>>> master
 }

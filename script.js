@@ -151,7 +151,7 @@ const logger= function(){
 logger();
 
 */
-
+/*
 const calc = (a,b) => {return (a+b);};
 console.log(calc(3,4));
 
@@ -159,4 +159,42 @@ const calc1= function(a,b) {
     return (a+b);
 };
 console.log(calc(3,4));
+*/
+/*
 
+const str="test",
+arr = [1,3,5];
+console.log(str.length);
+console.log(arr.length);
+*/
+
+// console.log (str[2]='d');
+// console.log(str);
+
+/*
+const str="test";
+
+let a=str.toUpperCase();
+a=str.toLowerCase();
+console.log (a);
+console.log(str);
+*/
+const fruit="Some fruits";
+
+console.log(fruit.indexOf('q'));
+console.log(fruit.indexOf('fruits'));
+
+const logg='Hello World';
+console.log(logg.indexOf('d'));
+console.log(logg.slice(6,11));
+console.log(logg.slice(2));
+console.log(logg.substring(0,5));
+console.log(logg.substr(0,10));
+
+const num=12.2;
+console.log(Math.round(num));
+const test='12.2px';
+let a;
+console.log(typeof(test));
+console.log(a=parseInt(test));
+console.log(typeof(a));

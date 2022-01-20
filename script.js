@@ -27,22 +27,22 @@ let incr = 10,
     console.log(isChecked && isChecked);
     */
 
-    // if (4 == 4){
-    //     console.log('Ok!');
-    // }else {
-    //     console.log('Error');
-    // }
+// if (4 == 4){
+//     console.log('Ok!');
+// }else {
+//     console.log('Error');
+// }
 
-    // const num = 50;
-    // if (num < 49){
-    //     console.log('Error');
-    // } else if(num>100){
-    //     console.log('меньше');
-    // }else{
-    //     console.log('Ok!');
-    // }
+// const num = 50;
+// if (num < 49){
+//     console.log('Error');
+// } else if(num>100){
+//     console.log('меньше');
+// }else{
+//     console.log('Ok!');
+// }
 
-    // (num == 50) ? console.log('Ok!') : console.log('Error');
+// (num == 50) ? console.log('Ok!') : console.log('Error');
 /*
     const num = 50;
 
@@ -201,7 +201,7 @@ console.log(typeof(test));
 console.log(a=parseInt(test));
 console.log(typeof(a));
 */
-
+/*
 function first(){
     // do something
     setTimeout(function(){
@@ -226,3 +226,46 @@ function done(){
 }
 
 learnJS('JavaScript', done);
+*/
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function (){
+        console.log('Test');
+    }
+};
+
+const {border,bg} = options.colors;
+console.log(bg);
+
+options.makeTest();
+
+console.log(options['height']);
+console.log(options['colors']['bg']);
+
+// delete options.name;
+// console.log(options);
+
+let counter=0;
+for (let key in options) {
+    /*
+    if (typeof (options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойство ${key} имеет обект со свойством ${i} значение ${options[key][i]}`);
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+    }
+    */
+   counter++;
+}
+console.log(counter);
+
+console.log(Object.keys(options));
+console.log(Object.keys(options).length);

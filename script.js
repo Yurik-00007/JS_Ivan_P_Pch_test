@@ -179,6 +179,8 @@ a=str.toLowerCase();
 console.log (a);
 console.log(str);
 */
+
+/*
 const fruit="Some fruits";
 
 console.log(fruit.indexOf('q'));
@@ -198,3 +200,29 @@ let a;
 console.log(typeof(test));
 console.log(a=parseInt(test));
 console.log(typeof(a));
+*/
+
+function first(){
+    // do something
+    setTimeout(function(){
+        console.log(1);
+    })
+}
+
+function second(){
+    console.log(2);
+}
+
+// first();
+// second();
+
+function learnJS (lang, callback){
+    console.log(`Я учу: ${lang}`);
+    callback();
+}
+
+function done(){
+    console.log('Я прошел этот урок!');
+}
+
+learnJS('JavaScript', done);

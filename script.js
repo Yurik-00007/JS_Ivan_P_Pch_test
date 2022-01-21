@@ -228,6 +228,8 @@ function done(){
 learnJS('JavaScript', done);
 */
 
+// 020
+/*
 const options = {
     name: 'test',
     width: 1024,
@@ -263,9 +265,77 @@ for (let key in options) {
         console.log(`Свойство ${key} имеет значение ${options[key]}`);
     }
     */
+/*
    counter++;
 }
 console.log(counter);
 
 console.log(Object.keys(options));
 console.log(Object.keys(options).length);
+*/
+
+//021
+/*
+const arr = [1, 2, 3, 6, 8];
+arr.pop();
+console.log(arr);
+arr.push(10);
+console.log(arr);
+
+for (let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+
+for(let value of arr){
+    console.log(value);
+}
+*/
+const arr = [1, 2, 3, 6, 8];
+//arr[99]=0;
+//console.log(arr.length);
+/*
+arr.unshift(0);
+
+console.log(arr.length);
+arr.forEach(function(item,i,arr){
+    console.log(`Индекс ${i}: ${item} значение внутри массива ${arr}`);
+});
+arr.shift();
+console.log(arr);
+*/
+/*
+let a= 'Hello world!',
+b=a.split(),
+c;
+console.log(typeof(b));
+console.log(b[0]);
+
+c=arr.join();
+console.log(typeof(c));
+console.log(c[0]);
+*/
+/*
+delete arr[2];
+console.log(arr);
+*/
+/*
+arr.splice(0,2,10,20);
+console.log(arr);
+
+const str = prompt('','');
+const products= str.split(", ");
+products.sort();
+console.log (products.join("; "));
+*/
+
+
+let arr1=[2,13, 26, 8,10];
+arr1.sort();
+console.log(arr1);
+
+arr1.sort(compareNum);
+console.log(arr1);
+
+function compareNum(a,b){
+    return a-b;
+}

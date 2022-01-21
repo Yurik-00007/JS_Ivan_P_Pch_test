@@ -246,8 +246,8 @@ console.log(bg);
 
 options.makeTest();
 
-console.log(options['height']);
-console.log(options['colors']['bg']);
+console.log(options.height);
+console.log(options.colors.bg);
 
 // delete options.name;
 // console.log(options);

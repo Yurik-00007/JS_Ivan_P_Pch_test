@@ -290,6 +290,7 @@ for(let value of arr){
     console.log(value);
 }
 */
+/*
 const arr = [1, 2, 3, 6, 8];
 //arr[99]=0;
 //console.log(arr.length);
@@ -328,7 +329,7 @@ products.sort();
 console.log (products.join("; "));
 */
 
-
+/*
 let arr1=[2,13, 26, 8,10];
 arr1.sort();
 console.log(arr1);
@@ -339,3 +340,111 @@ console.log(arr1);
 function compareNum(a,b){
     return a-b;
 }
+*/
+//передача по ссылке или по значению
+/*
+let a = 5,
+    b = a;
+
+
+    b = b + 5;
+
+    console.log(b);
+    console.log(a);
+
+    const obj = {
+        a : 5,
+        b : 1
+    };
+
+    const copy = obj;
+    
+    copy.a = 10;
+
+    console.log(copy);
+    console.log(obj);
+    */
+/*
+function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
+}
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+newNumbers.c.x = 10;
+
+console.log(newNumbers);
+console.log(numbers);
+
+const add = {
+    d: 17,
+    e: 20
+};
+
+console.log(Object.assign(numbers, add));
+
+const clon=Object.assign({}, add);
+clon.d=20;
+
+console.log(add);
+console.log(clon);
+
+const oldArray = ['a', 'b', 'c'],
+    newArray = oldArray.slice();
+  
+newArray[3]='sdvsdjslkdj';
+
+console.log(oldArray);
+console.log(newArray);
+*/
+
+const video = ['youtube', 'vimeo', 'rutube'],
+    blogs = ['wordpress', 'livejournal', 'bloggers'],
+    internet = [...video, ...blogs, 'vk', 'facebook'];
+
+console.log(internet);
+
+function log(a,b,c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num=[2,5,7];
+
+log(...num);
+
+const array = ['a','b '];
+const newAarray= [...array];
+
+newAarray[3]='d';
+console.log(array);
+console.log(newAarray);
+
+const q = {
+    one :1,
+    two: 2,
+    three: 3
+};
+
+const newq = {...q};
+
+newq.two = 4;
+console.log(q);
+console.log(newq);

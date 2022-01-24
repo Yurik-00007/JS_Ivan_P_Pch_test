@@ -468,7 +468,7 @@ const solder = {
 
 const jhon = Object.create(solder);
 
-//jhon.health =100;
+jhon.health =100;
 
 //Object.setPrototypeOf(jhon,solder);
 

@@ -450,14 +450,14 @@ console.log(q);
 console.log(newq);
 */
 
-let str = 'some';
-let strObj = new String(str);
+// let str = 'some';
+// let strObj = new String(str);
 
 // console.log(typeof(str));
 // console.log(typeof(strObj));
 
 //console.dir([1, 2, 3, 4]);
-
+/*
 const solder = {
     health: 400,
     armor: 100,
@@ -472,9 +472,29 @@ jhon.health =100;
 
 //Object.setPrototypeOf(jhon,solder);
 
-/*
+
 jhon.__proto__=solder;
-*/
+
+
 console.log(jhon);
 console.log(jhon.armor);
 jhon.sayHello();
+*/
+function hello() {
+    console.log('Hello World');
+}
+hello();
+
+function hi() {
+    console.log('Say hi!');
+}
+hi();
+
+const arr = [1, 14, 4, 30, 54],
+    sorted = arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+console.log(sorted);

@@ -413,7 +413,7 @@ newArray[3]='sdvsdjslkdj';
 console.log(oldArray);
 console.log(newArray);
 */
-
+/*
 const video = ['youtube', 'vimeo', 'rutube'],
     blogs = ['wordpress', 'livejournal', 'bloggers'],
     internet = [...video, ...blogs, 'vk', 'facebook'];
@@ -448,3 +448,33 @@ const newq = {...q};
 newq.two = 4;
 console.log(q);
 console.log(newq);
+*/
+
+let str = 'some';
+let strObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+//console.dir([1, 2, 3, 4]);
+
+const solder = {
+    health: 400,
+    armor: 100,
+    sayHello : function(){
+        console.log('Hello');
+    }
+};
+
+const jhon = Object.create(solder);
+
+//jhon.health =100;
+
+//Object.setPrototypeOf(jhon,solder);
+
+/*
+jhon.__proto__=solder;
+*/
+console.log(jhon);
+console.log(jhon.armor);
+jhon.sayHello();

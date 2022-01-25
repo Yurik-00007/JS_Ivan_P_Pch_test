@@ -542,5 +542,5 @@ if(switcher){
     console.log('Not Working ...');
 }
 //2
-console.log(typeof(Boolean('null')));
-console.log(Boolean('4'));
+console.log(typeof(Boolean(null)));
+console.log(Boolean('null'));

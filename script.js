@@ -480,6 +480,7 @@ console.log(jhon);
 console.log(jhon.armor);
 jhon.sayHello();
 */
+/*
 function hello() {
     console.log('Hello World');
 }
@@ -498,3 +499,48 @@ function compareNum(a, b) {
 }
 
 console.log(sorted);
+*/
+
+//динамическая типизация
+
+//to string
+
+//1
+console.log(typeof(String(null)));
+console.log(String(null));
+console.log(typeof(String(4)));
+
+//2
+console.log(typeof(4 + ''));
+
+const num=5;
+
+console.log('https://vk.com/catalog/'+num);
+
+//to number
+
+//1
+console.log(typeof(Number('4')));
+//2
+console.log(typeof(+'5'));
+//3
+console.log(typeof(parseInt('15px',10)));
+console.log(parseInt('15px',10));
+
+// to boolean
+//1
+let switcher=null;
+if(switcher){
+    console.log('Working ...');
+}else{
+    console.log('Not Working ...');
+}
+ switcher=1;
+if(switcher){
+    console.log('Working ...');
+}else{
+    console.log('Not Working ...');
+}
+//2
+console.log(typeof(Boolean('null')));
+console.log(Boolean('4'));

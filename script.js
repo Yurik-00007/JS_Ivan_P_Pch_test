@@ -576,6 +576,45 @@ let x = 5; console.log( x++ );//5
 //•	Чему равно такое выражение: [ ] + false - null + true ?NaN
 console.log([ ] + false - null + true);//NaN - числовой тип данных который относится к примитивам Not a Number не число
 //•	Что выведет этот код: let y = 1; let x = y = 2; alert(x); ?2
-let y = 1; let z=y=2;  console.log(z);//x=y; y=2
+let y = 1; let z=y=2;  console.log(z);//z=y; y=2
 //•	Чему равна сумма [ ] + 1 + 2?12
-console.log([ ] + 1 + 2);
+console.log([ ] + 1 + 2);// конкотенация
+//•	Что выведет этот код: alert( "1"[0] )?1
+console.log("mama"[1]);
+//Чемуравно 2 && 1 && null && 0 &&undefined? null
+console.log( 2 && 1 && null && 0 && undefined);
+//Есть ли разница между выражениями? !!( a&& b ) и (a && b)?да
+let a=1, 
+    b=0;
+console.log(!! (a && b));
+console.log(a && b);
+//•	Что выведет этот код: alert( null || 2 && 3 || 4 ); ?3
+console.log(null || 2 && 3 || 4);
+//•	a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ?нет
+a = [1, 2, 3];
+b = [1, 2, 3];
+if(a===b){
+    console.log(true);
+}else{
+    console.log(false);
+  
+}
+//•	Что выведет этот код: alert( +"Infinity" ); ?Infinity
+let inf=+'Infinity';
+console.log(typeof(inf) );
+console.log(inf+5);
+//
+//•	Верно ли сравнение: "Ёжик" > "яблоко"?нет
+if('Ёжик'>'яблока'){
+    console.log(true);
+}else{
+    console.log(false);
+}
+//•	Чему равно 0 || "" || 2 || undefined || true || falsе ?2
+let w=(0 || "" || 2 || undefined || true || false);
+if(w){
+    console.log(true);
+}else{
+    console.log(false);
+}
+console.log(w);

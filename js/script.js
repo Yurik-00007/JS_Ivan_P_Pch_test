@@ -1,5 +1,6 @@
 'use strict';
-
+//028
+/*
 const box = document.getElementById('box');
 console.log(box);
 
@@ -19,3 +20,5 @@ heart.forEach(function(item){
 heart.forEach(item => {
     console.log(item);
 });
+
+*/

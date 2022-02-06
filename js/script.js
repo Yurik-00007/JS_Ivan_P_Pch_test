@@ -12,8 +12,8 @@ document.body.append(script);
 loadScript('js/test.js');
 loadScript('js/some.js');
 */
-const btns =  document.querySelectorAll('button'),
-wrapper=document.querySelector('.btn-block');
+// const btns =  document.querySelectorAll('button'),
+// wrapper=document.querySelector('.btn-block');
 // console.log(wrapper);
 // // // console.log(btns[0].classList.length);
 // // // console.log(btns[0]);
@@ -44,12 +44,56 @@ wrapper=document.querySelector('.btn-block');
 //     }
 // });
 
-btns.forEach(btn => {
-    btn.addEventListener('click', () =>{
-        console.log('Hello');
-    });
-});
+// btns.forEach(btn => {
+//     btn.addEventListener('click', () =>{
+//         console.log('Hello');
+//     });
+// });
 
-const btn=document.createElement ('button');
-btn.classList.add('red');
-wrapper.append(btn);
+// const btn=document.createElement ('button');
+// btn.classList.add('red');
+// wrapper.append(btn);
+
+const btn = document.querySelector('.btn');
+let timerId,
+    i = 0;
+
+function myAnimation(){
+    const element = document.querySelector('.box');
+    let pos = 0;
+
+    const id = setInterval(frame,10)
+
+    function frame(){
+        if(pos ===300){
+            clearInterval(id);
+        }else{
+            pos++;
+            element.style.top=pos+"px";
+            element.style.left=pos+"px";
+        }
+    }
+}
+btn.addEventListener('click', myAnimation);
+// btn.addEventListener('click', () => {
+//     // const timerId = setTimeout(logger, 2000);
+//     const timerId = setInterval(function () {
+//         if (i === 3) {
+//             clearInterval(timerId);
+//         }
+//         console.log('text');
+//         i++;
+    
+//     }, 500);
+
+// });
+
+// let id=setTimeout(function log(){
+//     console.log('hello');
+//     id=setTimeout(log,500);
+//     },500);
+
+
+
+
+

@@ -1,3 +1,4 @@
+'use strict';
 /*
 const p = document.querySelectorAll('p');
 console.log(p);
@@ -54,27 +55,27 @@ loadScript('js/some.js');
 // btn.classList.add('red');
 // wrapper.append(btn);
 
-const btn = document.querySelector('.btn');
-let timerId,
-    i = 0;
+// const btn = document.querySelector('.btn');
+// let timerId,
+//     i = 0;
 
-function myAnimation(){
-    const element = document.querySelector('.box');
-    let pos = 0;
+// function myAnimation(){
+//     const element = document.querySelector('.box');
+//     let pos = 0;
 
-    const id = setInterval(frame,10)
+//     const id = setInterval(frame,10)
 
-    function frame(){
-        if(pos ===300){
-            clearInterval(id);
-        }else{
-            pos++;
-            element.style.top=pos+"px";
-            element.style.left=pos+"px";
-        }
-    }
-}
-btn.addEventListener('click', myAnimation);
+//     function frame(){
+//         if(pos ===300){
+//             clearInterval(id);
+//         }else{
+//             pos++;
+//             element.style.top=pos+"px";
+//             element.style.left=pos+"px";
+//         }
+//     }
+// }
+// btn.addEventListener('click', myAnimation);
 // btn.addEventListener('click', () => {
 //     // const timerId = setTimeout(logger, 2000);
 //     const timerId = setInterval(function () {
@@ -97,3 +98,39 @@ btn.addEventListener('click', myAnimation);
 
 
 
+//data
+
+// const now = new Date('2022-02-06');
+// console.log(now);
+
+// const now = new Date(2022, 2, 6,20);
+// console.log(now);
+
+// const now = new Date(0);
+// console.log(now);
+
+// const now = new Date(-999999999999);
+// console.log(now);
+
+// const now = new Date();
+// console.log(now.setHours(18, 40));
+// console.log(now);
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getMilliseconds());
+// console.log(now.getDay());
+// console.log(now.getHours());
+// console.log(now.getUTCHours());
+// console.log(now.getTimezoneOffset());
+
+// console.log(now.getTime());
+
+
+let start = new Date();
+
+for(let i=0; i<100000; i++){
+    let some= i **3;
+}
+let end= new Date();
+alert (`Цикл отработал за ${end-start} миллисекунд`);

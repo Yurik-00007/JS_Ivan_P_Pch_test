@@ -53,7 +53,7 @@ loadScript('js/some.js');
 // const btn=document.createElement ('button');
 // btn.classList.add('red');
 // wrapper.append(btn);
-
+/*
 const btn = document.querySelector('.btn');
 let timerId,
     i = 0;
@@ -75,6 +75,8 @@ function myAnimation(){
     }
 }
 btn.addEventListener('click', myAnimation);
+
+*/
 // btn.addEventListener('click', () => {
 //     // const timerId = setTimeout(logger, 2000);
 //     const timerId = setInterval(function () {
@@ -94,6 +96,30 @@ btn.addEventListener('click', myAnimation);
 //     },500);
 
 
+const box = document.querySelector('.box'),
+btn = document.querySelector('button');
 
 
+// const width = box.clientWidth;
+// const height = box.clientHeight;
+
+// const width = box.offsetWidth;
+// const height = box.offsetHeight;
+
+const width = box.scrollWidth;
+const height = box.scrollHeight;
+
+btn.addEventListener('click', () =>{
+    // box.style.height=box.scrollHeight + 'px';
+    console.log(box.scrollTop);
+});
+
+
+console.log(box.getBoundingClientRect().bottom);
+console.log(box.getBoundingClientRect());
+
+console.log(width, height);
+
+const style=window.getComputedStyle(box);
+console.log(style.display);
 

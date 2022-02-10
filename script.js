@@ -54,7 +54,6 @@ loadScript('js/some.js');
 // const btn=document.createElement ('button');
 // btn.classList.add('red');
 // wrapper.append(btn);
-<<<<<<< HEAD:script.js
 /*
 const btn = document.querySelector('.btn');
 let timerId,
@@ -79,7 +78,6 @@ function myAnimation(){
 btn.addEventListener('click', myAnimation);
 
 */
-=======
 
 // const btn = document.querySelector('.btn');
 // let timerId,
@@ -102,7 +100,6 @@ btn.addEventListener('click', myAnimation);
 //     }
 // }
 // btn.addEventListener('click', myAnimation);
->>>>>>> master:js/script.js
 // btn.addEventListener('click', () => {
 //     // const timerId = setTimeout(logger, 2000);
 //     const timerId = setInterval(function () {
@@ -120,7 +117,7 @@ btn.addEventListener('click', myAnimation);
 //     console.log('hello');
 //     id=setTimeout(log,500);
 //     },500);
-
+/*
 
 const box = document.querySelector('.box'),
 btn = document.querySelector('button');
@@ -185,3 +182,30 @@ for(let i=0; i<100000; i++){
 }
 let end= new Date();
 alert (`Цикл отработал за ${end-start} миллисекунд`);
+*/
+
+//конструктор функция
+function User(name, id){
+    this.name =name;
+    this.id = id;
+    this.human = true;
+    this.hello = function (){
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+User.prototype.exit= function(){
+    console.log(`Пользователь ${this.name} ушел`);
+}
+
+const ivan =new User('Ivan',28);
+const alex =new User('Alex',20);
+
+ivan.hello();
+alex.hello();
+
+console.log(ivan);
+console.log(alex);
+
+ivan.exit();
+alex.exit();

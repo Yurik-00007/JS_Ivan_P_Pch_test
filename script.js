@@ -1,294 +1,34 @@
-
-
-
-/*
-const p = document.querySelectorAll('p');
-console.log(p);
-
-function loadScript(src){
-const script=document.createElement('script');
-script.async = false;
-script.src = src;
-document.body.append(script);
-}
-
-loadScript('js/test.js');
-loadScript('js/some.js');
-*/
-// const btns =  document.querySelectorAll('button'),
-// wrapper=document.querySelector('.btn-block');
-// console.log(wrapper);
-// // // console.log(btns[0].classList.length);
-// // // console.log(btns[0]);
-// // // console.log(btns[0].classList.item(0));
-// // console.log(btns[1].classList.add('red','trrrrrrrttt'));
-// // // console.log(btns[0].classList.remove('blue'));
-// // console.log(btns[0].classList.toggle('blue'));
-
-// // if(btns[1].classList.contains('red')){
-// //     console.log('red');
-// // }
-
-// btns[0].addEventListener('click', () =>{
-//     // if(btns[1].classList.contains('red')){
-//     //     btns[1].classList.remove('red');
-//     // } else{
-//     //     btns[1].classList.add('red');
-//     // }
-//     btns[1].classList.toggle('red');
-// })
-// console.log(btns[0].className);
-
-
-// wrapper.addEventListener('click',(e)=> {
-//     // console.dir(e.target);
-//     if(e.target && e.target.tagName == 'BUTTON'){
-//         console.log('Hello');
-//     }
-// });
-
-// btns.forEach(btn => {
-//     btn.addEventListener('click', () =>{
-//         console.log('Hello');
-//     });
-// });
-
-// const btn=document.createElement ('button');
-// btn.classList.add('red');
-// wrapper.append(btn);
-/*
-const btn = document.querySelector('.btn');
-let timerId,
-    i = 0;
-
-function myAnimation(){
-    const element = document.querySelector('.box');
-    let pos = 0;
-
-    const id = setInterval(frame,10)
-
-    function frame(){
-        if(pos ===300){
-            clearInterval(id);
-        }else{
-            pos++;
-            element.style.top=pos+"px";
-            element.style.left=pos+"px";
-        }
-    }
-}
-btn.addEventListener('click', myAnimation);
-
-*/
-
-// const btn = document.querySelector('.btn');
-// let timerId,
-//     i = 0;
-
-// function myAnimation(){
-//     const element = document.querySelector('.box');
-//     let pos = 0;
-
-//     const id = setInterval(frame,10)
-
-//     function frame(){
-//         if(pos ===300){
-//             clearInterval(id);
-//         }else{
-//             pos++;
-//             element.style.top=pos+"px";
-//             element.style.left=pos+"px";
-//         }
-//     }
-// }
-// btn.addEventListener('click', myAnimation);
-// btn.addEventListener('click', () => {
-//     // const timerId = setTimeout(logger, 2000);
-//     const timerId = setInterval(function () {
-//         if (i === 3) {
-//             clearInterval(timerId);
-//         }
-//         console.log('text');
-//         i++;
-    
-//     }, 500);
-
-// });
-
-// let id=setTimeout(function log(){
-//     console.log('hello');
-//     id=setTimeout(log,500);
-//     },500);
-/*
-
-const box = document.querySelector('.box'),
-btn = document.querySelector('button');
-
-
-// const width = box.clientWidth;
-// const height = box.clientHeight;
-
-// const width = box.offsetWidth;
-// const height = box.offsetHeight;
-
-const width = box.scrollWidth;
-const height = box.scrollHeight;
-
-btn.addEventListener('click', () =>{
-    // box.style.height=box.scrollHeight + 'px';
-    console.log(box.scrollTop);
-});
-
-
-console.log(box.getBoundingClientRect().bottom);
-console.log(box.getBoundingClientRect());
-
-console.log(width, height);
-
-const style=window.getComputedStyle(box);
-console.log(style.display);
-
-//data
-
-// const now = new Date('2022-02-06');
-// console.log(now);
-
-// const now = new Date(2022, 2, 6,20);
-// console.log(now);
-
-// const now = new Date(0);
-// console.log(now);
-
-// const now = new Date(-999999999999);
-// console.log(now);
-
-// const now = new Date();
-// console.log(now.setHours(18, 40));
-// console.log(now);
-// console.log(now.getFullYear());
-// console.log(now.getMonth());
-// console.log(now.getDate());
-// console.log(now.getMilliseconds());
-// console.log(now.getDay());
-// console.log(now.getHours());
-// console.log(now.getUTCHours());
-// console.log(now.getTimezoneOffset());
-
-// console.log(now.getTime());
-
-
-let start = new Date();
-
-for(let i=0; i<100000; i++){
-    let some= i **3;
-}
-let end= new Date();
-alert (`Цикл отработал за ${end-start} миллисекунд`);
-*/
-
-//конструктор функция
-/*
-function User(name, id){
-    this.name =name;
-    this.id = id;
-    this.human = true;
-    this.hello = function (){
-        console.log(`Hello ${this.name}`);
-    }
-}
-
-User.prototype.exit= function(){
-    console.log(`Пользователь ${this.name} ушел`);
-}
-
-const ivan =new User('Ivan',28);
-const alex =new User('Alex',20);
-
-ivan.hello();
-alex.hello();
-
-console.log(ivan);
-console.log(alex);
-
-ivan.exit();
-alex.exit();
-
-*/
-
-//контекст вызова функций
-// 'use strict';
-
-// function showThis(a,b){
-//     console.log(this);
-//     function sum(){
-//         console.log(this);
-//         return a+b;
-//     }
-
-//     console.log(sum());
-// }
-
-// showThis(4,5);
-
-// const obj = {
-//     a:20,
-//     b:15,
-//     sum :function(){
-//         function shout(){
-//         console.log(this);
-//         }
-//         shout();
-//     };
-//obj.sum();
-
-// function User (name, id){
-//     this.name = name;
-//     this.id =id;
-//     this.human = true;
-// }
-// let ivan = new User('Ivan', 23);
-
-
-// function sayName (surname) {
-//     console.log (this);
-//     console.log (this.name+surname);
-// }
-// const user = {
-//     name :'John'
-// };
-
-// sayName.call(user,'Smith');
-// sayName.apply(user, ['Smith']);
-/*
-function count(num){
-    return this*num;
-}
-const double = count.bind(2);
-console.log(double(3));
-console.log(double(13));
-*/
 'use strict';
-const btn = document.querySelector('button');
-btn.addEventListener('click', () => {
-    // e.target.style.backgroundColor='red';
-    this.style.backgroundColor='green';
-    // console.log(this);
-    // this.style.backgroundColor = 'red';
+
+class Rectangle{
+    constructor(height,width){
+        this.height = height;
+        this.width = width;
+    }
     
-});
+    calcArea(){
+        return this.height*this.width;
+    }
+}
 
-// const obj = {
-//     num : 5,
-//     sayNumber : function(){
-//         const say = function(){
-//             console.log(this.num);
-//         }
-//         say();
-//     }
+class ColoredRectangleWithText extends Rectangle{
+    constructor(height,width,text,bgColor){
+        super(height,width);
+        this.text=text;
+        this.bgColor=bgColor;
+    }
 
-// };
-// obj.sayNumber();
+    showMyProps(){
+        console.log(`Текст: ${this.text},цвет: ${this.bgColor}`);
+    }
+}
 
-// const doble = a => a*2;
-// console.log(doble(4));
+const div = new ColoredRectangleWithText(25,10,'Hello World','red');
 
+div.showMyProps();
+console.log(div.calcArea());
+// const square = new Rectangle(10,10);
+// const long = new Rectangle(20,100);
+
+// console.log(square.calcArea());
+// console.log(long.calcArea());

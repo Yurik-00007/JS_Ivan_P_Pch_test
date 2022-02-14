@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 class Rectangle{
     constructor(height,width){
         this.height = height;
@@ -19,7 +19,7 @@ class ColoredRectangleWithText extends Rectangle{
     }
 
     showMyProps(){
-        console.log(`Текст: ${this.text},цвет: ${this.bgColor}`);
+        console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
     }
 }
 
@@ -32,3 +32,15 @@ console.log(div.calcArea());
 
 // console.log(square.calcArea());
 // console.log(long.calcArea());
+*/
+
+const log = function(a, b, ...rest){
+    console.log(a,b, rest);
+};
+log('basic','rest', 'operator','usage');
+
+function calcOrDouble(number, basis=2){
+    console.log(number*basis);
+}
+calcOrDouble(3);
+

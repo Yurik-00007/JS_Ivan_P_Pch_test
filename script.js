@@ -44,3 +44,16 @@ function calcOrDouble(number, basis=2){
 }
 calcOrDouble(3);
 
+const persone = {
+    name: 'Alex',
+    tel: '+7444444',
+    parent : {
+        mom: 'Olga',
+        dad: 'Mike'
+    }
+};
+
+const clon = JSON.parse(JSON.stringify(persone));
+clon.parent.mom = 'Ann';
+console.log(persone);
+console.log(clon);
